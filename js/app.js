@@ -42,15 +42,15 @@ function checkSectionInViewPort() {
         const position = section.getBoundingClientRect();
         const top = position.top;
         const bottom = position.bottom;
-        const isShown = (top >= 0) && (bottom <= innerHeight);
+        const isShown = (top <= 150) && (bottom >= 150);
         console.log(isShown);
 
         if (isShown) {
+            section.classList.add('your-active-class');
             checkActiveSection();
             switch (section.dataset.nav) {
                 case 'Section 1':
                     document.getElementById('section-1').classList.add('active');
-                    console.log('here')
                     break;
                 case 'Section 2':
                     document.getElementById('section-2').classList.add('active');
@@ -64,6 +64,9 @@ function checkSectionInViewPort() {
                     document.getElementById('section-4').classList.add('active');
                     break;
             }
+        } else {
+            section.classList.remove('your-active-class');
+
         }
 
     }
