@@ -1,8 +1,23 @@
 # Landing Page Project
+Landing page project is consists of different sections that might help the User.
 
-## Table of Contents
+It is developed using:
+    - Vs Code
+    - Html
+    - Css
+    - JS
 
-* [Instructions](#instructions)
+How to run the project:
+
+ 1- Clone the repository
+ 2- Open Vs Code
+ 3- Run index.html file
+
+
+Landing-page files: 
+    - index.html: include the content code for the sections
+    - styles.css: include the styling for the landing page
+    - app.js: includes the code for the navigation and events required like click and scroll.
 
 ## Instructions
 
